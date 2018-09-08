@@ -1,4 +1,4 @@
-### Crosschain assets transfers through L2
+# Crosschain transfers through general L2
 
 ![Logo](https://docs.google.com/drawings/d/e/2PACX-1vSv_Sm2XqYnVWspCo2HapRMg5Xllucv5_IgZIA6_3by8QvQWldqdir5jHAaFBcEwWQil2cFSgeV8jJd/pub?w=1101&h=741)
 
@@ -29,9 +29,9 @@ that are covered by different blockchain ecosystems (common Layer 2 for various 
 ### How does it works?
 ![arch](https://docs.google.com/drawings/d/e/2PACX-1vTFcz9UwCJsB2pFgusM4ImbYEwHvJ51OTWHIxe7NFQiakubgFdpqTMFOjlC1pqeqDva1FvJWXGZRSbd/pub?w=1101&h=741)
 
-* [Detailed architecure overview and contract implementation](); [#todo]
+* [Architecure overview / ETH Contract](); [#todo]
 * [Middleware implementation](); [#todo]
-* [Forked and hacked GEO node repo](); [#todo]
+* Forked and hacked [GEO node repo]() ([Specs](https://github.com/GEO-Protocol/specs-protocol)); [#todo]
 
 
 ### How can I check it?
