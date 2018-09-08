@@ -27,6 +27,15 @@ that are covered by different blockchain ecosystems (common Layer 2 for various 
 
 
 ### How does it works?
+![arch](https://docs.google.com/drawings/d/e/2PACX-1vTFcz9UwCJsB2pFgusM4ImbYEwHvJ51OTWHIxe7NFQiakubgFdpqTMFOjlC1pqeqDva1FvJWXGZRSbd/pub?w=1101&h=741)
+
+* [Detailed architecure overview and contract implementation](); [#todo]
+* [Middleware implementation](); [#todo]
+* [Forked and hacked GEO node repo](); [#todo]
+
+
+### How can I check it?
+[#todo instruction]
 
 
 
