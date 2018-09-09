@@ -45,6 +45,10 @@ user: ethBerlin
 pass: berlin2018
 ```
 
+```
+ssh ethBerlin@104.248.47.57 -p 2277
+```
+
 
 
 ### Licence - MIT
