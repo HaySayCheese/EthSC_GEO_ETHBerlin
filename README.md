@@ -32,6 +32,7 @@ that are covered by different blockchain ecosystems (common Layer 2 for various 
 * [Architecure overview / ETH Contract](https://github.com/Koroqe/geo-state-channel-eth);
 * [Middleware implementation](https://github.com/Koroqe/geo-ethereum-middleware);
 * Forked and hacked [GEO node repo](https://github.com/HaySayCheese/EthGEOProtoHack_ethberlin) ([Specs](https://github.com/GEO-Protocol/specs-protocol));
+* [Some slides for high-level explanation](https://docs.google.com/presentation/d/1HNhj0JxOa-g0GmBpJx7jy8rIV23onR6hpLEGkyVwil4/edit?usp=sharing);
 
 
 ### How can I check it?
