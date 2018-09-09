@@ -49,6 +49,72 @@ pass: berlin2018
 ssh ethBerlin@104.248.47.57 -p 2277
 ```
 
+##### Instructions how to prepare the environment
+1. Build and deploy the [contract]((https://github.com/Koroqe/geo-state-channel-eth)) to the net.
+2. Create 2 nodes. First node created would be "Alice", and second one would be "Bob".
+
+```
+curl -X POST private.localhost:2000/api/v1/nodes
+curl -X POST private.localhost:2000/api/v1/nodes
+```
+
+This Requests would return you UUID of the nodes created.  
+You should remember which UUID belongs to which node.  
+In case if nodes are present - you may use already present pair of nodes.
+
+3. For Bob in `/home/nodes_handler/io/<bob_uuid>/` create file `middleware.port` with `5000` in it.
+4. For Alice in `/home/nodes_handler/io/<alice_uuid>/` create file `middleware.port` with **`5001`** in it.
+5. Stop both Alice and Bob middlewares:
+```
+killall -r "GeoEth*"
+```
+6. Change corresponding `contract->address`, account address and PK in middlewares configurations (if needed)
+Alice:
+```
+nano middleware/ubuntu-x64-5001/publish/appsettings.json
+```
+
+Bob:
+```
+nano middleware/ubuntu-x64-5000/publish/appsettings.json
+```
+7. Start corresponding middlewares:
+```
+~/middleware/ubuntu-x64-5000/publish$ nohup > /dev/null ./GeoEthereumMiddleware &
+```
+
+```
+~/middleware/ubuntu-x64-5001/publish$ nohup > /dev/null ./GeoEthereumMiddleware &
+```
+
+8. Update (if needed) ethereum address to the Alice and Bob config (conf.json) in `/home/nodes_handler/io/<node_uuid>/`.
+Example of result config:
+```
+{
+  "gateway": [1],
+  "network": {
+    "interface": "0.0.0.0",
+    "port": 8090
+  },
+
+  "uuid2address": {
+    "host": "0.0.0.0",
+    "port": 1500
+  },
+
+  "node": {
+    "uuid": "13e5cf8c-5834-4e52-b65b-f9281dd1ff90",
+    "ethereum": "234wrew534tgerger4eegrthrt"
+  }
+}
+```
+
+9. Start nodes handler:
+```
+sudo systemctl start handler.service
+```
+
+10. 
 
 
 ### Licence - MIT
