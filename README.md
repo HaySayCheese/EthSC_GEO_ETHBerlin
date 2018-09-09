@@ -114,7 +114,32 @@ Example of result config:
 sudo systemctl start handler.service
 ```
 
-10. 
+10. Create TL from Bob to Alice
+```
+curl -X PUT private.localhost:2000/api/v1/nodes/{bob_uuid}/contractors/{alice_uuid}/trust-lines/1/?amount=500000&state-channel=1
+```
+
+11. [optional] Create TL from Alice to Bob
+```
+curl -X PUT private.localhost:2000/api/v1/nodes/{alice_uuid}/contractors/{bob_uuid}/trust-lines/1/?amount=400000
+```
+
+12. Send several payments in boths directions:
+```
+curl -X PUT private.localhost:2000/api/v1/nodes/{bob_uuid}/contractors/{alice_uuid}/transactions/1/?amount=500
+...
+curl -X PUT private.localhost:2000/api/v1/nodes/{alice_uuid}/contractors/{bob_uuid}/transactions/1/?amount=500
+```
+
+13. Close channel via:
+```
+curl -X POST private.localhost:2000/api/v1/nodes/{alice_uuid}/contractors/{bob_uuid}/trust-lines-close-channel/1/
+```
+On the Bob's side channel would be closed utomatically.
+
+14. Check nodes eth. wallets.
+
+15. [Optional] nodes logs are accessible in `/home/nodes_handler/io/<node_uuid>/operations.log`.
 
 
 ### Licence - MIT
