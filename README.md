@@ -36,7 +36,14 @@ that are covered by different blockchain ecosystems (common Layer 2 for various 
 
 
 ### How can I check it?
-[#todo instruction]
+Please, join:
+
+```
+ip: 104.248.47.57
+ssh-port: 2277
+user: ethBerlin
+pass: berlin2018
+```
 
 
 
