@@ -29,9 +29,9 @@ that are covered by different blockchain ecosystems (common Layer 2 for various 
 ### How does it works?
 ![arch](https://docs.google.com/drawings/d/e/2PACX-1vTFcz9UwCJsB2pFgusM4ImbYEwHvJ51OTWHIxe7NFQiakubgFdpqTMFOjlC1pqeqDva1FvJWXGZRSbd/pub?w=1101&h=741)
 
-* [Architecure overview / ETH Contract](); [#todo]
-* [Middleware implementation](); [#todo]
-* Forked and hacked [GEO node repo](https://github.com/HaySayCheese/EthGEOProtoHack_ethberlin) ([Specs](https://github.com/GEO-Protocol/specs-protocol)); [#todo]
+* [Architecure overview / ETH Contract](https://github.com/Koroqe/geo-state-channel-eth);
+* [Middleware implementation](https://github.com/Koroqe/geo-ethereum-middleware);
+* Forked and hacked [GEO node repo](https://github.com/HaySayCheese/EthGEOProtoHack_ethberlin) ([Specs](https://github.com/GEO-Protocol/specs-protocol));
 
 
 ### How can I check it?
