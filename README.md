@@ -31,7 +31,7 @@ that are covered by different blockchain ecosystems (common Layer 2 for various 
 
 * [Architecure overview / ETH Contract](); [#todo]
 * [Middleware implementation](); [#todo]
-* Forked and hacked [GEO node repo]() ([Specs](https://github.com/GEO-Protocol/specs-protocol)); [#todo]
+* Forked and hacked [GEO node repo](https://github.com/HaySayCheese/EthGEOProtoHack_ethberlin) ([Specs](https://github.com/GEO-Protocol/specs-protocol)); [#todo]
 
 
 ### How can I check it?
